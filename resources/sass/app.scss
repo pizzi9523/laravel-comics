@@ -2,6 +2,8 @@
 @use 'bootstrap';
 
 $primary-site-color: #0282f9;
+$link-color: #959595;
+$dark-footer-bg: #303030;
 
 body{
     font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
@@ -91,12 +93,78 @@ body{
             align-items: center;
             color: white;
             gap: 10px;
-        img {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
         }
     }
-  }
+    }
 }
+
+
+#site_footer {
+  .top-footer {
+    background: url("../img/dc-logo-bg.png") 90%,
+      url("../img/footer-bg.jpg");
+    background-size: 730px, cover;
+    background-repeat: no-repeat;
+    .row {
+      justify-content: space-between;
+
+      .links {
+        display: flex;
+        gap: 50px;
+        padding-top: 80px 0;
+        width: calc(100% / 2);
+
+        h5 {
+          color: white;
+          padding: 20px 0;
+          font-size: 24px;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            padding: 3px 0;
+            a {
+              text-decoration: none;
+              color: $link-color;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .copyright{
+        color: $link-color
+    }
+  }
+  .bottom-footer {
+    background-color: $dark-footer-bg;
+
+    .row {
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+      .sign-up {
+        color: white;
+        padding: 10px 0;
+        border: 1px solid $primary-site-color;
+        font-weight: bold;
+      }
+      .social {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        div {
+          color: $primary-site-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

@@ -11330,3 +11330,62 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+#site_footer .top-footer {
+  background: url("../img/dc-logo-bg.png") 90%, url("../img/footer-bg.jpg");
+  background-size: 730px, cover;
+  background-repeat: no-repeat;
+}
+#site_footer .top-footer .row {
+  justify-content: space-between;
+}
+#site_footer .top-footer .row .links {
+  display: flex;
+  gap: 50px;
+  padding-top: 80px 0;
+  width: 50%;
+}
+#site_footer .top-footer .row .links h5 {
+  color: white;
+  padding: 20px 0;
+  font-size: 24px;
+}
+#site_footer .top-footer .row .links ul {
+  list-style: none;
+  padding: 0;
+}
+#site_footer .top-footer .row .links ul li {
+  padding: 3px 0;
+}
+#site_footer .top-footer .row .links ul li a {
+  text-decoration: none;
+  color: #959595;
+  font-size: 1rem;
+}
+#site_footer .top-footer .copyright {
+  color: #959595;
+}
+#site_footer .bottom-footer {
+  background-color: #303030;
+}
+#site_footer .bottom-footer .row {
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+#site_footer .bottom-footer .row .sign-up {
+  color: white;
+  padding: 10px 0;
+  border: 1px solid #0282f9;
+  font-weight: bold;
+}
+#site_footer .bottom-footer .row .social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+#site_footer .bottom-footer .row .social div {
+  color: #0282f9;
+  font-weight: bold;
+}

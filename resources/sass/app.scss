@@ -5,7 +5,10 @@ $primary-site-color: #0282f9;
 
 body{
     font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+}
 
+.py-6{
+    padding: 4rem 0;
 }
 
 #site_header{
@@ -25,4 +28,75 @@ body{
             border: none;
         }
     }
+}
+
+#site_main{
+    background-color: #1c1c1c;
+    .series{
+        position: relative;
+        .my_card.comic {
+            img {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+            div {
+                font-size: 13 px;
+                padding: 1rem 0;
+                color: white;
+            }
+        }
+    }
+
+    .jumbotron {
+        height: 500px;
+        background-image: url("../img/jumbotron.jpg");
+        background-size: cover;
+    }
+
+    .current_series {
+        text-align: center;
+        color: white;
+        padding: 1rem 1.5rem;
+        background-color: $primary-site-color;
+        font-weight: bold;
+        font-size: 25px;
+        display: inline-block;
+        position: absolute;
+        top: -1.8rem;
+        left: 6rem;
+}
+
+    .load_more {
+        text-align: center;
+        color: white;
+        padding: 1rem 3rem;
+        background-color: $primary-site-color;
+        width: 200px;
+        margin: auto;
+        font-weight: bold;
+    }
+
+    .main_footer {
+        background-color: $primary-site-color;
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            padding: 60px 0;
+        .my_card {
+            display: flex;
+            align-items: center;
+            color: white;
+            gap: 10px;
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+    }
+  }
+}
 }

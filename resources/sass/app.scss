@@ -1,1 +1,28 @@
 //
+@use 'bootstrap';
+
+$primary-site-color: #0282f9;
+
+body{
+    font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+
+}
+
+#site_header{
+
+    .top_header{
+        background-color: $primary-site-color;
+    }
+    nav{
+        a{
+            font-weight: bold;
+            color: black;
+            font-size: .8rem;
+        }
+                
+        input{
+            border-bottom: solid 2px $primary-site-color !important;
+            border: none;
+        }
+    }
+}

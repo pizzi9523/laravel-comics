@@ -73,9 +73,9 @@ body{
     .load_more {
         text-align: center;
         color: white;
-        padding: 1rem 3rem;
+        padding: 0.8rem 4rem;
         background-color: $primary-site-color;
-        width: 200px;
+        width: fit-content;
         margin: auto;
         font-weight: bold;
     }

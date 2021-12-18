@@ -24,36 +24,56 @@
 
 <div class="main_footer mt-5">
     <div class="container">
-        <div class="my_card">
-            <div class="img_wrapper">
-                <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="" />
+        <div class="row">
+            <div class="col">
+                <div class="my_card">
+                    <div class="img_wrapper">
+                        <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="" />
+                    </div>
+                    <div class="my_card_text">DIGITAL COMICS</div>
+                </div>
             </div>
-            <div class="my_card_text">DIGITAL COMICS</div>
-        </div>
-        <div class="my_card">
-            <div class="img_wrapper">
-                <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="" />
+
+            <div class="col">
+                <div class="my_card">
+                    <div class="img_wrapper">
+                        <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="" />
+                    </div>
+                    <div class="my_card_text">DC MERCHANDISE</div>
+                </div>
             </div>
-            <div class="my_card_text">DC MERCHANDISE</div>
-        </div>
-        <div class="my_card">
-            <div class="img_wrapper">
-                <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="" />
+            <div class="col">
+                <div class="my_card">
+                    <div class="img_wrapper">
+                        <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="" />
+                    </div>
+                    <div class="my_card_text">SUBSCRIPTION</div>
+                </div>
             </div>
-            <div class="my_card_text">SUBSCRIPTION</div>
-        </div>
-        <div class="my_card">
-            <div class="img_wrapper">
-                <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="" />
+            <div class="col">
+                <div class="my_card">
+                    <div class="img_wrapper">
+                        <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="" />
+                    </div>
+                    <div class="my_card_text">COMIC SHOP LOCATOR</div>
+                </div>
             </div>
-            <div class="my_card_text">COMIC SHOP LOCATOR</div>
-        </div>
-        <div class="my_card">
-            <div class="img_wrapper">
-                <img src="{{asset('img/buy-dc-power-visa.svg')}}" alt="" />
+            <div class="col">
+                <div class="my_card">
+                    <div class="img_wrapper">
+                        <img src="{{asset('img/buy-dc-power-visa.svg')}}" alt="" />
+                    </div>
+                    <div class="my_card_text">DC POWER VISA</div>
+                </div>
             </div>
-            <div class="my_card_text">DC POWER VISA</div>
+
+
         </div>
+
+
+
+
+
     </div>
 </div>
 

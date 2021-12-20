@@ -52,17 +52,17 @@ $menu = [
             <nav class="nav  justify-content-end">
                 <a class="nav-link text-light" href="">DC POWER℠VISA®</a>
                 <a class="nav-link text-light" href="">ADDITIONAL DC SITES &dtrif;</a>
-
             </nav>
         </div>
 
     </div>
-    <div class="container d-flex justify-content-between py-4">
+
+    <div class="container  bottom_header d-flex justify-content-between py-4">
         <div class="logo">
             <img src="{{asset('img/dc-logo.png')}}" alt="" />
         </div>
 
-        <nav class="nav justify-content-center align-content-center">
+        <nav class="nav bottom_nav justify-content-center align-content-center">
             @foreach( $menu as $item )
             <a class="nav-link {{Route::currentRouteName() === $item['text'] ? 'active' : ''}}"
                 href="{{ route($item['text'])}}">{{ strtoupper($item['text']) }}</a>

@@ -16,7 +16,9 @@ body{
     .top_header{
         background-color: $primary-site-color;
     }
-    nav{
+
+    .bottom_header{
+      nav{
         a{
             font-weight: bold;
             color: black;
@@ -40,6 +42,10 @@ body{
         }
     }
 }
+
+    }
+    
+    
 
 #site_main{
   .series_container{

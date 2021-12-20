@@ -11254,22 +11254,22 @@ body {
 #site_header .top_header {
   background-color: #0282f9;
 }
-#site_header nav a {
+#site_header .bottom_header nav a {
   font-weight: bold;
   color: black;
   font-size: 1rem;
 }
-#site_header nav a:hover {
+#site_header .bottom_header nav a:hover {
   color: #0282f9;
   border-bottom: 4px solid #0282f9;
   margin-bottom: -56px;
 }
-#site_header nav a.active {
+#site_header .bottom_header nav a.active {
   color: #0282f9;
   border-bottom: 4px solid #0282f9;
   margin-bottom: -56px;
 }
-#site_header nav input {
+#site_header .bottom_header nav input {
   border-bottom: solid 2px #0282f9 !important;
   border: none;
 }

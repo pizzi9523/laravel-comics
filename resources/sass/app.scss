@@ -10,89 +10,7 @@ body{
     padding: 4rem 0;
 }
 
-.small_container{
-  width: 1000px;
-  margin: auto;
-  .comic_title{
-    color: #003F5E;
-  }
-  .comic_description{
-    color: #656d6b;
-  }
 
-  .row_price{
-    background-color: #55BA59;
-    color: #BAF980;
-    border-bottom: 1px solid #357739;
-
-    .price_container{
-      display: flex;
-      justify-content: space-between;
-      border-right: 2px solid #357739;
-      padding: 10px;
-
-    }
-
-    .check_availability{
-      padding: 10px;
-    }
-
-  }
-
-  .advertisement  {
-    color: #656d6b;
-  }
-
-  
-}
-
-.comic_footer{
-  border-top: 1px solid lightgray;
-  background-color: #F6F6F6;
-  h3{
-      color: #003F5E;
-  }
-  .col-6{
-    
-      .row{
-      border-top: 1px solid lightgray;
-      color: $primary-site-color;
-      padding: 10px 0;
-      font-size: 14px;
-
-        &:last-child{
-        border-bottom: 1px solid lightgray ;
-        }
-
-        .col_title{
-          font-size: 16px;
-          font-weight: 500;
-          color: #003F5E;
-        }
-      
-    }
-
-  }
-
-  .container_special{
-    border-top: 1px solid #D8D8D8;
-  }
-  .row_special{
-    &:last-child{
-      border-right: 1px solid #D8D8D8;
-
-
-    }
-    h6{
-      color: #9F9F9F;
-      border-left: 1px solid #D8D8D8;
-      padding: 40px 20px;
-    }
-    
-  }
-  
-  
-}
 #site_header{
 
     .top_header{
@@ -294,4 +212,89 @@ body{
       }
     }
   }
+}
+
+/*SINGLE COMIC*/
+.small_container{
+  width: 1000px;
+  margin: auto;
+  .comic_title{
+    color: #003F5E;
+  }
+  .comic_description{
+    color: #656d6b;
+  }
+
+  .row_price{
+    background-color: #55BA59;
+    color: #BAF980;
+    border-bottom: 1px solid #357739;
+
+    .price_container{
+      display: flex;
+      justify-content: space-between;
+      border-right: 2px solid #357739;
+      padding: 10px;
+
+    }
+
+    .check_availability{
+      padding: 10px;
+    }
+
+  }
+
+  .advertisement  {
+    color: #656d6b;
+  }
+
+  
+}
+
+.comic_footer{
+  border-top: 1px solid lightgray;
+  background-color: #F6F6F6;
+  h3{
+      color: #003F5E;
+  }
+  .col-6{
+    
+      .row{
+      border-top: 1px solid lightgray;
+      color: $primary-site-color;
+      padding: 10px 0;
+      font-size: 14px;
+
+        &:last-child{
+        border-bottom: 1px solid lightgray ;
+        }
+
+        .col_title{
+          font-size: 16px;
+          font-weight: 500;
+          color: #003F5E;
+        }
+      
+    }
+
+  }
+
+  .container_special{
+    border-top: 1px solid #D8D8D8;
+  }
+  .row_special{
+    &:last-child{
+      border-right: 1px solid #D8D8D8;
+
+
+    }
+    h6{
+      color: #9F9F9F;
+      border-left: 1px solid #D8D8D8;
+      padding: 40px 20px;
+    }
+    
+  }
+  
+  
 }

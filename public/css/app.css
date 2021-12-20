@@ -11251,67 +11251,6 @@ body {
   padding: 4rem 0;
 }
 
-.small_container {
-  width: 1000px;
-  margin: auto;
-}
-.small_container .comic_title {
-  color: #003F5E;
-}
-.small_container .comic_description {
-  color: #656d6b;
-}
-.small_container .row_price {
-  background-color: #55BA59;
-  color: #BAF980;
-  border-bottom: 1px solid #357739;
-}
-.small_container .row_price .price_container {
-  display: flex;
-  justify-content: space-between;
-  border-right: 2px solid #357739;
-  padding: 10px;
-}
-.small_container .row_price .check_availability {
-  padding: 10px;
-}
-.small_container .advertisement {
-  color: #656d6b;
-}
-
-.comic_footer {
-  border-top: 1px solid lightgray;
-  background-color: #F6F6F6;
-}
-.comic_footer h3 {
-  color: #003F5E;
-}
-.comic_footer .col-6 .row {
-  border-top: 1px solid lightgray;
-  color: #0282f9;
-  padding: 10px 0;
-  font-size: 14px;
-}
-.comic_footer .col-6 .row:last-child {
-  border-bottom: 1px solid lightgray;
-}
-.comic_footer .col-6 .row .col_title {
-  font-size: 16px;
-  font-weight: 500;
-  color: #003F5E;
-}
-.comic_footer .container_special {
-  border-top: 1px solid #D8D8D8;
-}
-.comic_footer .row_special:last-child {
-  border-right: 1px solid #D8D8D8;
-}
-.comic_footer .row_special h6 {
-  color: #9F9F9F;
-  border-left: 1px solid #D8D8D8;
-  padding: 40px 20px;
-}
-
 #site_header .top_header {
   background-color: #0282f9;
 }
@@ -11491,4 +11430,66 @@ body {
 #site_footer .bottom-footer .row .social div {
   color: #0282f9;
   font-weight: bold;
+}
+
+/*SINGLE COMIC*/
+.small_container {
+  width: 1000px;
+  margin: auto;
+}
+.small_container .comic_title {
+  color: #003F5E;
+}
+.small_container .comic_description {
+  color: #656d6b;
+}
+.small_container .row_price {
+  background-color: #55BA59;
+  color: #BAF980;
+  border-bottom: 1px solid #357739;
+}
+.small_container .row_price .price_container {
+  display: flex;
+  justify-content: space-between;
+  border-right: 2px solid #357739;
+  padding: 10px;
+}
+.small_container .row_price .check_availability {
+  padding: 10px;
+}
+.small_container .advertisement {
+  color: #656d6b;
+}
+
+.comic_footer {
+  border-top: 1px solid lightgray;
+  background-color: #F6F6F6;
+}
+.comic_footer h3 {
+  color: #003F5E;
+}
+.comic_footer .col-6 .row {
+  border-top: 1px solid lightgray;
+  color: #0282f9;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.comic_footer .col-6 .row:last-child {
+  border-bottom: 1px solid lightgray;
+}
+.comic_footer .col-6 .row .col_title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #003F5E;
+}
+.comic_footer .container_special {
+  border-top: 1px solid #D8D8D8;
+}
+.comic_footer .row_special:last-child {
+  border-right: 1px solid #D8D8D8;
+}
+.comic_footer .row_special h6 {
+  color: #9F9F9F;
+  border-left: 1px solid #D8D8D8;
+  padding: 40px 20px;
 }

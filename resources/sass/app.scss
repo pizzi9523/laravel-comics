@@ -1,12 +1,9 @@
 //
 @use 'bootstrap';
-
-$primary-site-color: #0282f9;
-$link-color: #959595;
-$dark-footer-bg: #303030;
+@import 'partials/variables';
 
 body{
-    font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .py-6{
@@ -22,7 +19,12 @@ body{
         a{
             font-weight: bold;
             color: black;
-            font-size: 0.8rem;
+            font-size: 1rem;
+            &:hover{
+              color: $primary-site-color;
+              border-bottom: 4px solid $primary-site-color;
+              margin-bottom: -56px;
+            }
         }
                 
         input{

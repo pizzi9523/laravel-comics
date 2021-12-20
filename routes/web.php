@@ -30,7 +30,7 @@ Route::get('/comics', function () {
 Route::get('/comics/{id}', function ($id) {
     $comics = config('db.comics');
 
-    if(is_numeric($id) && $id >= 0){
+    if(is_numeric($id) && $id >= 0 && $id < count($comics)){
         $comic = $comics[$id];
         return view('comics.show', compact('comic'));
     }

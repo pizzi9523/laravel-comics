@@ -11279,6 +11279,39 @@ body {
   color: #656d6b;
 }
 
+.comic_footer {
+  border-top: 1px solid lightgray;
+  background-color: #F6F6F6;
+}
+.comic_footer h3 {
+  color: #003F5E;
+}
+.comic_footer .col-6 .row {
+  border-top: 1px solid lightgray;
+  color: #0282f9;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.comic_footer .col-6 .row:last-child {
+  border-bottom: 1px solid lightgray;
+}
+.comic_footer .col-6 .row .col_title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #003F5E;
+}
+.comic_footer .container_special {
+  border-top: 1px solid #D8D8D8;
+}
+.comic_footer .row_special:last-child {
+  border-right: 1px solid #D8D8D8;
+}
+.comic_footer .row_special h6 {
+  color: #9F9F9F;
+  border-left: 1px solid #D8D8D8;
+  padding: 40px 20px;
+}
+
 #site_header .top_header {
   background-color: #0282f9;
 }
@@ -11288,6 +11321,11 @@ body {
   font-size: 1rem;
 }
 #site_header nav a:hover {
+  color: #0282f9;
+  border-bottom: 4px solid #0282f9;
+  margin-bottom: -56px;
+}
+#site_header nav a.active {
   color: #0282f9;
   border-bottom: 4px solid #0282f9;
   margin-bottom: -56px;
@@ -11343,6 +11381,7 @@ body {
   left: 2px;
   display: inline-block;
   background-color: #00A9D9;
+  padding: 0 5px;
 }
 #site_main .jumbotron .comic .poster .view_gallery {
   position: absolute;

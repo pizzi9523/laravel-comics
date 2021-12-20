@@ -64,15 +64,13 @@ $menu = [
 
         <nav class="nav justify-content-center align-content-center">
             @foreach( $menu as $item )
-            <a class="nav-link" href="{{ route($item['text'])}}">{{ strtoupper($item['text']) }}</a>
+            <a class="nav-link {{Route::currentRouteName() === $item['text'] ? 'active' : ''}}"
+                href="{{ route($item['text'])}}">{{ strtoupper($item['text']) }}</a>
             @endforeach
 
             <input id="search_bar" class="text-end me-2" type="text" placeholder="Search">
             <label class="d-flex align-items-center" for="search_bar"><i class="fas fa-search"></i></label>
         </nav>
-
-
-
 
     </div>
 </header>

@@ -1,3 +1,51 @@
+<?php
+$menu = [
+    [
+        'text' => 'home'
+    ],
+
+    [
+        'text' => 'comics'
+    ],
+
+    [
+        'text' => 'movies'
+    ],
+
+    [
+        'text' => 'tv'
+    ],
+
+    [
+        'text' => 'games'
+    ],
+
+    [
+        'text' => 'collectibles'
+    ],
+
+    [
+        'text' => 'video'
+    ],
+
+    [
+        'text' => 'fans'
+    ],
+
+    [
+        'text' => 'news'
+    ],
+
+    [
+        'text' => 'shop'
+    ],
+]
+
+
+?>
+
+
+
 <header id="site_header">
     <div class="top_header">
         <div class=" container">
@@ -15,24 +63,12 @@
         </div>
 
         <nav class="nav justify-content-center align-content-center">
-            <a class="nav-link" href="#">CHARACTERS</a>
-            <a class="nav-link" href="{{ route('home')}}">COMICS</a>
-            <a class="nav-link" href="#">MOVIES</a>
-            <a class="nav-link" href="#">TV</a>
-            <a class="nav-link" href="#">GAMES</a>
-            <a class="nav-link" href="#">COLLECTIBLES</a>
-            <a class="nav-link" href="#">VIDEOS</a>
-            <a class="nav-link" href="#">FANS</a>
-            <a class="nav-link" href="{{ route('news')}}">NEWS</a>
-            <a class="nav-link" href="#">SHOP &dtrif; </a>
+            @foreach( $menu as $item )
+            <a class="nav-link" href="{{ route($item['text'])}}">{{ strtoupper($item['text']) }}</a>
+            @endforeach
 
             <input id="search_bar" class="text-end me-2" type="text" placeholder="Search">
             <label class="d-flex align-items-center" for="search_bar"><i class="fas fa-search"></i></label>
-
-
-
-
-
         </nav>
 
 

@@ -10,6 +10,40 @@ body{
     padding: 4rem 0;
 }
 
+.small_container{
+  width: 1000px;
+  margin: auto;
+  .comic_title{
+    color: #003F5E;
+  }
+  .comic_description{
+    color: #656d6b;
+  }
+
+  .row_price{
+    background-color: #55BA59;
+    color: #BAF980;
+    border-bottom: 1px solid #357739;
+
+    .price_container{
+      display: flex;
+      justify-content: space-between;
+      border-right: 2px solid #357739;
+      padding: 10px;
+
+    }
+
+    .check_availability{
+      padding: 10px;
+    }
+
+  }
+
+  .advertisement  {
+    color: #656d6b;
+  }
+}
+
 #site_header{
 
     .top_header{
@@ -35,9 +69,15 @@ body{
 }
 
 #site_main{
+  .series_container{
     background-color: #1c1c1c;
+    padding-bottom: 50px;
+
     .series{
         position: relative;
+        a{
+          text-decoration: none;
+        }
         .my_card.comic {
             img {
                 height: 200px;
@@ -52,11 +92,43 @@ body{
             }
         }
     }
+  }
 
     .jumbotron {
-        height: 500px;
+        height: 400px;
         background-image: url("../img/jumbotron.jpg");
         background-size: cover;
+        .comic{
+          position: relative;
+          top: 170px;
+          left: 0;
+          display: inline-block;
+          .poster{
+            width: fit-content;
+            border: 2px solid white;
+            .comic_book{
+              position: absolute;
+              top: 2px;
+              left: 2px;
+              display: inline-block;
+              background-color: #00A9D9;
+            }
+
+            .view_gallery{
+              position: absolute;
+              bottom: 2px;
+              background-color: #00A9D9;
+              width: calc(100% - 4px)
+            }
+
+          }
+          
+        }
+    }
+
+    .sep{
+      height: 80px;
+      background-color: $primary-site-color;
     }
 
     .current_series {

@@ -11251,6 +11251,34 @@ body {
   padding: 4rem 0;
 }
 
+.small_container {
+  width: 1000px;
+  margin: auto;
+}
+.small_container .comic_title {
+  color: #003F5E;
+}
+.small_container .comic_description {
+  color: #656d6b;
+}
+.small_container .row_price {
+  background-color: #55BA59;
+  color: #BAF980;
+  border-bottom: 1px solid #357739;
+}
+.small_container .row_price .price_container {
+  display: flex;
+  justify-content: space-between;
+  border-right: 2px solid #357739;
+  padding: 10px;
+}
+.small_container .row_price .check_availability {
+  padding: 10px;
+}
+.small_container .advertisement {
+  color: #656d6b;
+}
+
 #site_header .top_header {
   background-color: #0282f9;
 }
@@ -11269,13 +11297,17 @@ body {
   border: none;
 }
 
-#site_main {
+#site_main .series_container {
   background-color: #1c1c1c;
+  padding-bottom: 50px;
 }
-#site_main .series {
+#site_main .series_container .series {
   position: relative;
 }
-#site_main .series .my_card.comic img {
+#site_main .series_container .series a {
+  text-decoration: none;
+}
+#site_main .series_container .series .my_card.comic img {
   height: 200px;
   width: 100%;
   -o-object-fit: cover;
@@ -11283,15 +11315,44 @@ body {
   -o-object-position: top;
      object-position: top;
 }
-#site_main .series .my_card.comic div {
+#site_main .series_container .series .my_card.comic div {
   font-size: 13 px;
   padding: 1rem 0;
   color: white;
 }
 #site_main .jumbotron {
-  height: 500px;
+  height: 400px;
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
+}
+#site_main .jumbotron .comic {
+  position: relative;
+  top: 170px;
+  left: 0;
+  display: inline-block;
+}
+#site_main .jumbotron .comic .poster {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid white;
+}
+#site_main .jumbotron .comic .poster .comic_book {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: inline-block;
+  background-color: #00A9D9;
+}
+#site_main .jumbotron .comic .poster .view_gallery {
+  position: absolute;
+  bottom: 2px;
+  background-color: #00A9D9;
+  width: calc(100% - 4px);
+}
+#site_main .sep {
+  height: 80px;
+  background-color: #0282f9;
 }
 #site_main .current_series {
   text-align: center;

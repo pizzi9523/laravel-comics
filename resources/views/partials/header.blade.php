@@ -1,51 +1,3 @@
-<?php
-$menu = [
-    [
-        'text' => 'home'
-    ],
-
-    [
-        'text' => 'comics'
-    ],
-
-    [
-        'text' => 'movies'
-    ],
-
-    [
-        'text' => 'tv'
-    ],
-
-    [
-        'text' => 'games'
-    ],
-
-    [
-        'text' => 'collectibles'
-    ],
-
-    [
-        'text' => 'video'
-    ],
-
-    [
-        'text' => 'fans'
-    ],
-
-    [
-        'text' => 'news'
-    ],
-
-    [
-        'text' => 'shop'
-    ],
-]
-
-
-?>
-
-
-
 <header id="site_header">
     <div class="top_header">
         <div class=" container">
@@ -63,7 +15,7 @@ $menu = [
         </div>
 
         <nav class="nav bottom_nav justify-content-center align-content-center">
-            @foreach( $menu as $item )
+            @foreach( config('db.menu') as $item )
             <a class="nav-link {{Route::currentRouteName() === $item['text'] ? 'active' : ''}}"
                 href="{{ route($item['text'])}}">{{ strtoupper($item['text']) }}</a>
             @endforeach
